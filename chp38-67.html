@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Js Assignment 9</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+<body>
+    
+<h1 class="text-center">chp 38-42</h1>
+<h5>Answer 1:</h5>
+
+<div class="container">
+  <input type="text" id="val1" placeholder="enter base"/>
+  <input type="text" id="val2" placeholder="enter exponent"/>
+  <input type="button" value="Power" onclick="power()"/>
+
+  <p id="result"> </p>
+
+  
+</div>
+<h5>Answer 2:</h5>
+<div class="container">
+  
+  <input type="text" id="Year" placeholder="enter any year"/>
+  <input type="button" value="Check Leap Year" onclick="leapYear()"/>
+  <p id="leapYear"> </p>
+</div>
+
+<h5>Answer 3:</h5>
+
+<div class="container">
+  <input type="text" id="a" placeholder="length of side 1"/>
+  <input type="text" id="b" placeholder="length of side 2"/>
+  <input type="text" id="c" placeholder="length of side 3"/>
+
+  <input type="button" value="Area" onclick="areaOfTriangle()"/>
+
+  <p id="p2"> </p>
+
+  
+</div>
+<h5>Answer 4:</h5>
+
+<div class="container">
+  <input type="text" id="sub1" placeholder="marks of subject 1"/>
+  <input type="text" id="sub2" placeholder="marks of subject 2"/>
+  <input type="text" id="sub3" placeholder="marks of subject 3"/>
+
+  <input type="button" value="Result" onclick="std_data()"/>
+
+  <p id="p3"> </p>
+
+  
+</div>
+<h5>Answer 5:</h5>
+
+<div class="container">
+  <input type="text" id="str" placeholder="enter any string"/>
+ 
+
+  <input type="button" value="Result" onclick=" remove_vowel()"/>
+
+  <p id="p4"> </p>
+
+  
+</div>
+<h5>Answer 6:</h5>
+
+<div class="container">
+  <input type="text" id="str1" placeholder="enter string"/>
+  <input type="text" id="chr" placeholder="enter character whose index you want to find"/>
+  
+
+  <input type="button" value="IndexOf" onclick=" indexof()"/>
+
+  <p id="p5"> </p>
+
+  
+</div>
+<h5>Answer 7:</h5>
+
+<div class="container">
+  <input type="text" id="sentence" placeholder="enter string"/>
+  
+  <input type="button" value="succession of vowel" onclick="vowelOcu()"/>
+
+  <p id="p6"> </p>
+
+  
+</div>
+<h5>Answer 8:</h5>
+
+<div class="container">
+  <input type="text" id="dis" placeholder="enter distance in kilometer"/>
+  
+  <input type="button" value="distance convertor" onclick="distance()"/>
+
+  <p id="p7"> </p>
+
+</div>
+<h5>Answer 9:</h5>
+<input type="button" value="extra pay" onclick="extraPay()"/>
+<h5>Answer 10:</h5>
+
+<input type="button" value="notes" onclick="currency()"/>
+
+
+
+<h1 class="text-center">chp 43-48</h1>
+<div class="conatiner">  <!--5 rows 5 answers -->
+    <h5>Answer:1</h5>
+    <div class="row">
+<div class="col-sm-12">
+<a href="#" onclick="alertBox()">click here for alert</a>
+</div>
+</div>
+<br>
+<h5>Answer:2</h5>
+<div class="row">
+<div class="col-sm-12">
+    <h5 class=" text-success">MOBILE PHONE LOOKUP</h5>
+   
+        <div class="card d-inline-flex" style="width: 150px; height: 40px;">
+        <img src="images/mob1.png" onclick="alertimg()" class="card-img-top border" alt="..."style="height: 200px; width: 150px;"/>
+        <div class="card-body">
+           
+            <p class="card-text">Nokia Mobile</p>
+           
+          </div> 
+    </div>
+    
+     <div class="card d-inline-flex" style="width: 150px; height: 40px;">
+        <img src="images/mob2.jpg" onclick="alertimg()"  class="card-img-top  border" alt="..."/>
+        <div class="card-body">
+            <p class="card-text">Oppo Mobile</p> 
+          </div> 
+      </div>
+   <div class="card d-inline-flex" style="width: 150px; height: 40px;">
+        <img src="images/mob3.jpg"  onclick="alertimg()"  class="card-img-top  border" style="height: 200px; width: 180px;" alt="..."/>
+        <div class="card-body">
+           
+            <p class="card-text">Samsung </p>
+          </div> 
+      </div>
+   <div class="card d-inline-flex" style="width: 150px; height: 40px;">
+        <img src="images/mob4.jpg"  onclick="alertimg()"  class="card-img-top  border" alt="..." style="height: 200px; width: 200px;"/>
+        <div class="card-body">
+           
+            <p class="card-text">Huwaei Mobile</p>
+           
+          </div>   
+    </div> 
+   
+</div>
+</div>
+<h5 style="margin-top: 30px;">Answer:3</h5>
+<div class="row mt-5">
+    <div class="col-sm-12">
+        <div class="table-responsive">
+            <table class="table table-bordered" id="myTable">
+                <thead>
+                  <tr>
+                    <th scope="col">Index</th>
+                    <th scope="col">Name</th>
+                    <th scope="col">Class</th>
+                    <th scope="col"></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">1</th>
+                    
+                    <td>Jhone</td>
+                    <td>10</td>
+                    <td><button onclick="deleterow(this)  ">Delete</button></td>
+
+                  </tr>
+                  <tr>
+                    <th scope="row">2</th>
+                    <td>Doe</td>
+                    <td>9</td>
+                    <td><button onclick="deleterow(this) ">Delete</button></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">3</th>
+                    <td >Mark</td>
+                    <td>10</td>
+                    <td><button onclick="deleterow(this)">Delete</button></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">4</th>
+                    <td >James</td>
+                    <td>8</td>
+                    <td><button onclick=" deleterow(this)">Delete</button></td>
+                  </tr>
+                </tbody>
+              </table>
+        </div>
+    </div>
+</div>
+<h5 >Answer:4</h5>
+<div class="row">
+   <div class="col-sm-6">
+       <img src="images/mob2.jpg" onmouseover="rollover(this)" onmouseout="rollaway(this)" />
+   </div>
+</div>
+<h5>Answer:5</h5>
+<div class="row">
+   <div class="col-sm-12">
+       <div class="mr-3">
+       <h5>Counter</h5>
+
+        <input type="text" id="value" value="0"/>
+       </div>
+
+<div class="mt-3">
+<button type="button" class="btn btn-outline-warning ml-3 mr-3"  onclick="inc()">+</button>
+<button type="button" class="btn btn-outline-warning ml-3 mr-3" onclick=" dec()">-</button>
+<button type="button" class="btn btn-outline-danger ml-3 mr-3" onclick=" reset()">reset</button>
+
+</div>
+   </div>
+</div>
+</div>
+
+<h1 class="text-center">chp 49-52</h1>
+<h5>Answer:1</h5>
+
+<form  style="border:1px solid #ccc">
+  <div class="container">
+    <h1>Sign Up</h1>
+    <p>Please fill in this form to create an account.</p>
+    <hr>
+
+    <label for="email"><b>Email</b></label>
+    <input type="text" placeholder="Enter Email" name="email" id="email"required class="d-block">
+
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" id="pass" required class="d-block">
+
+    <label for="psw-repeat"><b>Repeat Password</b></label>
+    <input type="password" placeholder="Repeat Password" name="psw-repeat"id="re-pass" required class="d-block">
+    
+    <label>
+      <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+    </label>
+    
+    <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
+
+    <div >
+      
+      <button  onclick="signup()" >Sign Up</button>
+    </div>
+  </div>
+</form>
+
+<div class="container mt-5">
+    <h5>Answer:2</h5>
+  <div class="row">
+    <div class="col-sm-6">
+      <div class="card" style="width: 18rem;">
+        <img class="card-img-top" src="images/huda.jpg" alt="Card image cap">
+        <div class="card-body">
+          <p class="card-text" id="text">Tips:<br>
+            - The metallic shadows can be applied easily with a brush, and for a more amplified finish, you can apply using your finger.
+             <br>
+            - The Black Truffle shadow can be used wet for a sharp wing liner, or dry for an intense smokey look.<br></p>
+           <!-- <a href="JavaScript:void(0)" class="card-link" onclick="details()">More Details</a>-->
+           <button onclick="details()">Read More</button>
+          </div>
+      </div>
+    </div>
+  </div>
+  <h5 class="mt-5">Answer:3</h5>
+  <div class="row mt-5">
+    
+    <form id="studentForm" style="border:1px solid #ccc;visibility: hidden;" >
+      <div class="container">
+        <h1>Student Form</h1>
+    <p>Please fill this form </p>
+    <hr>
+        <label for="rollno"><b>Student Roll Number</b></label>
+        <input type="text" placeholder="Enter your roll number" name="rollno" id="rollno"required class="d-block">
+        <label for="studentName"><b>Student Name</b></label>
+        <input type="text" placeholder="Enter your name" name="studentName" id="studentName"required class="d-block">
+        <label for="studentClass"><b>Student Class</b></label>
+        <input type="text" placeholder="Enter your class" name="studentClass" id="studentClass"required class="d-block">
+        <div class="mt-3">
+      <input type="button" onclick=" addROw()" value="ADD"/>
+     <!-- <input type="button"  onclick="edit()" value="EDIT"/>-->
+    </div>
+
+      </div>
+    </form>
+    
+  </div>
+  <div class="row">
+    <div class="col-sm-12">
+        <div class="table-responsive">
+            <table class="table table-bordered" id="Table">
+                <thead>
+                  <tr>
+                    <th >Roll Number</th>
+                    <th >Name</th>
+                    <th >Class</th>
+                    <th ></th>
+                    <th ></th>
+
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td >1</td>
+                    
+                    <td >Jhone</td>
+                    <td  >10</td>
+                    <td><button onclick="deleteRow(this)  ">Delete</button></td>
+                    <td><button onclick="edit_btn()">Edit</button></td>
+
+
+                  </tr>
+                  <tr>
+                    <td>2</td>
+                    <td>Doe</td>
+                    <td>9</td>
+                    <td><button onclick="deleteRow(this) ">Delete</button></td>
+                    <td><button onclick="edit_btn()">Edit</button></td>
+
+                  </tr>
+                  <tr>
+                    <td >3</td>
+                    <td >Mark</td>
+                    <td>10</td>
+                    <td><button onclick="deleteRow(this)">Delete</button></td>
+                    <td><button onclick="edit_btn()">Edit</button></td>
+
+                  </tr>
+                  <tr>
+                    <td >4</td>
+                    <td >James</td>
+                    <td>8</td>
+                    <td><button onclick="deleteRow(this)">Delete</button></td>
+                    <td><button onclick="edit_btn()">Edit</button></td>
+
+                  </tr>
+                </tbody>
+              </table>
+        </div>
+    </div>
+</div>
+</div>
+<h1 class="text-center">Chp 52-57</h1>
+<h5>Answer:1</h5>
+<div style="display: flex;">
+    <img class="ImgThumbnail" src="images/pic1.jpg">
+    <img class="ImgThumbnail" src="images/pic2.jpg">
+    <img class="ImgThumbnail" src="images/pic3.jpg">
+    
+    </div>
+    <div class="modal">
+      
+      <span class="close">x</span>
+      <div class="modal-content">
+     
+      <img class="modalImage modal-content" id="imag01">
+      <div id="caption"></div>
+    </div>
+    </div>
+    
+<h5>Answer:2</h5>
+<div class="container">
+    
+    <input type="button" value="zoom +" onclick="increaseFontSize('pera', 10)">
+    <input type="button" value="zoom -" onclick="increaseFontSize('pera', -10)">
+    
+    <p id="pera" >Font Size by 1 Pixel</p>
+
+
+</div>
+
+
+
+    <script src="app.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>
